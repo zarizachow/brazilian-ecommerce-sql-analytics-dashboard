@@ -1,4 +1,4 @@
--- Silver Layer: Clean + typed + join-ready tables
+-- Clean + join-ready tables
 
 CREATE SCHEMA IF NOT EXISTS silver;
 
@@ -21,7 +21,7 @@ SELECT
   customer_id,
   customer_unique_id,
   customer_zip_code_prefix,
-  customer_city
+  customer_city,
   customer_state
 FROM bronze.customers;
 
@@ -89,7 +89,7 @@ SELECT
   product_category_name_english
 FROM bronze.category_translation;
 
--- Geolocation (keep as-is for now; we’ll aggregate later)
+-- Geolocation (will be aggregated later)
 CREATE OR REPLACE TABLE silver.geolocation AS
 SELECT *
 FROM bronze.geolocation;

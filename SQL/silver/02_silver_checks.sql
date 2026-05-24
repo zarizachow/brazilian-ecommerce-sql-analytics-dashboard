@@ -1,4 +1,4 @@
--- Silver Layer: Quality checks (keys, nulls, duplicates)
+-- Quality checks (keys, nulls, duplicates)
 
 -- Row counts
 SELECT 'orders' AS table_name, COUNT(*) AS row_count FROM silver.orders

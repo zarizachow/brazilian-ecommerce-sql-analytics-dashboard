@@ -1,4 +1,4 @@
--- Silver: Deduplicate reviews
+-- Deduplicate reviews
 -- Keep 1 row per review_id (latest answer timestamp)
 
 CREATE SCHEMA IF NOT EXISTS silver;
