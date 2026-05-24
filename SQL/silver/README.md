@@ -177,10 +177,10 @@ Performs quality checks on the Silver tables, including:
 - Timestamp sanity checks  
 - Join integrity validation
 
-### `03_silver_dedup.sql`
+### `03_silver_reviews_dedup.sql`
 Creates a deduplicated version of the reviews table to ensure each `review_id` appears only once.
 
-### `04_silver_dedup_check.sql`
+### `04_silver_dedup_reviews_check.sql`
 Validates that duplicates have been successfully removed from `silver.reviews_dedup`.
 
 ---
